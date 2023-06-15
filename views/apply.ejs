@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <%- include('./layouts/_studentHeader') %> 
+    <div class="container mt-4 col-md-4">
+        <h4 style="padding-bottom: 5px; padding-left: 100px;">Apply for Job</h4>
+      
+        <form class="row g-3 mt-1 border border-dark rounded p-2" 
+         style="--bs-border-opacity: 0.5" action="/interview/createapply" method="POST" enctype="multipart/form-data">
+      
+          <div class="col-12">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter student name"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+      
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter student email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+      
+          <div class="col-12">
+            <label for="company" class="form-label">Company</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter student college"
+              id="company"
+              name="company"
+              required
+            />
+          </div>
+
+          <div class="col-12">
+            <label for="jobPost" class="form-label">Job-Post</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter student college"
+              id="jobPost"
+              name="jobPost"
+              required
+            />
+          </div>
+          
+          <div class="col-md-12">
+            <label for="resume" class="form-label">Upload Resume</label>
+            <input type="file" class="form-control" id="resume" name="resume" required/>
+          </div> 
+          
+          <div class="col-12 ">
+            <button type="submit" class="btn btn-primary">Apply</button>
+          </div>
+      
+        </form>
+      </div>
+      </div>
+</body>
+</html>

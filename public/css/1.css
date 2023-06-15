@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.carousel-item img {
+    height: 78vh;
+}
+
+.card {
+    height: 600px;
+    width: 300px;
+    outline: none;
+}
+
+.card img {
+    height: 370px;
+}
+
+.navbar {
+    background-color: #e5b642;
+}
+
+.f {
+    display: flex;
+    margin: 45px 30px 45px 30px;
+}
+
+.i {
+    margin-left: 45px;
+}
+
+.bg-dark {
+    height: 40vh;
+}
+
+.pad {
+    margin: 25px;
+}
+
+.btn:hover {
+    background-color: gray;
+    text-decoration: underline;
+}
+
+.btn {
+    width: 25%;
+    margin: auto;
+}
+
+.container {
+    border-radius: 8px;
+}
+
+.card {
+    animation-name: mov;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+/* Keyframes for card animation */
+@keyframes mov {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Clients Section */
+#client-section {
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 124px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: gray;
+    /* You can replace this background with an image if desired */
+    /* background: url('../contact.jpg') no-repeat center center/cover; */
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #0d6efd;
+    width: 100%;
+    max-width: 250px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px)
