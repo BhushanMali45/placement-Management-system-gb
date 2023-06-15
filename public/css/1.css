@@ -67,17 +67,6 @@ body {
     animation-delay: 3s;
 }
 
-/* Keyframes for card animation */
-@keyframes mov {
-    0% {
-        transform: translateX(-1000px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-/* Clients Section */
 #client-section {
     position: relative;
 }
@@ -118,9 +107,8 @@ body {
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background-color: gray;
-    /* You can replace this background with an image if desired */
-    /* background: url('../contact.jpg') no-repeat center center/cover; */
+    background: url('../contact.jpg') no-repeat center center/cover;
+    background-color: grey;
 }
 
 #contact-box {
@@ -139,8 +127,7 @@ body {
 }
 
 #contact-box form {
-    width: 100%;
-    max-width: 400px;
+    width: 40%;
 }
 
 h1 {
@@ -157,15 +144,32 @@ h1 {
     text-transform: uppercase;
     outline: 0;
     background: #0d6efd;
-    width: 100%;
-    max-width: 250px;
+    width: 50%;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
+    cursor: pointer;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px)
+#contact-box button:hover,
+.form button:active,
+.form button:focus {
+    background: #6610f2;
+}
+
+.section {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.section-small {
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
