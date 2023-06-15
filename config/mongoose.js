@@ -7,10 +7,10 @@ mongoose.connect(
   // "mongodb+srv://admin:admin123@cluster0.ljmczch.mongodb.net/?retryWrites=true&w=majority"
   
 
-  // "mongodb+srv://18minorpr:RSFJ0XHp7NxxtiRK@cluster0.ui5tb2s.mongodb.net/"
+  "mongodb+srv://18minorpr:RSFJ0XHp7NxxtiRK@cluster0.ui5tb2s.mongodb.net/"
   // RSFJ0XHp7NxxtiRK
 
-  "mongodb://127.0.0.1:27017/mpr"
+  // "mongodb://127.0.0.1:27017/mpr"
 );
 
 // acquiring the connection to check if it is succesfull
