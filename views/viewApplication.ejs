@@ -13,12 +13,12 @@
     crossorigin="anonymous"
   />
     <title>Document</title>
-    <style>
-        .gunjan {
+     <style>
+        <!-- .gunjan {
             display: flex;
             justify-content: center;
         }
-        
+         -->
         /* Responsive Styles for Laptops */
         @media (max-width: 1024px) {
             .gunjan {
@@ -27,14 +27,14 @@
         }
         
         /* Responsive Styles for Mobile Devices */
-        @media (max-width: 767px) {
+         @media (max-width: 767px) {
             .gunjan {
                 flex-direction: column;
                 align-items: center;
             }
-        }
+        } 
         
-    </style>
+    </style> 
 </head>
 <body>
     <%- include('./layouts/_collegeHeader') %> 
@@ -42,7 +42,7 @@
 
    <h4 style="padding-left:600px; padding-top: 20px;">Job-Application</h4>
 
-    <form action="" class="gunjan">
+    <form action="" class="mx-auto col-10 col-md-8 col-lg-6" class="gunjan">
         
         <input type="text"placeholder="search company,name,email." name="search" >
         <input type="submit" value="search">
